@@ -34,13 +34,13 @@ const NoteContainer = () => {
           onChange={handleNoteInputChange}
         ></textarea>
       ) : (
-        <div id="preview">
+        <div id="save">
           {noteText}
           {/* <button onClick={handleSaveNote}>Save</button> */}
         </div>
       )}
       <button id="switchEditButton" onClick={handleSwitchEdit}>
-        {editMode ? "Preview" : "Edit"}
+        {editMode ? "Save" : "Edit"}
       </button>
     </div>
   );
